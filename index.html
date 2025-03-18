@@ -3,113 +3,144 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Social links profile</title>
+  <title>Frontend Mentor | Recipe page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    html, body {
-      margin: 0;
-      width: 100dvw;
-      height: 100dvh;
-    }
 
-    body {
-      font-family: "Inter", sans-serif;
-      background-color: hsl(0, 0%, 8%);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .card-social {
-      display: flex;
-      flex-direction: column;
-      margin: auto;
-      background-color: hsl(0, 0%, 12%);
-      width: 382px;
-      height: fit-content;
-      border-radius: 10px;
-      box-sizing: border-box;
-      padding: 40px;
-      gap: 24px;
-    }
-    .info {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
-    .social-section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 28px;
-    }
-    .avatar {
-      width: 88px;
-      height: 88px;
-      border-radius: 50%;
-    }
-    .name {
-      font-size: 24px;
-      font-weight: 600;
-      color: hsl(0, 0%, 100%);
-    }
 
-    .address {
-      font-size: 14px;
-      color: hsl(75, 94%, 57%);
-      font-weight: 600;
-
-    }
-    
-    p {
-      font-size: 14px;
-      color: hsl(0, 0%, 100%);
-      margin: 0;
-    }
-    .btn-section {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .btn-section > span {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      font-size: 14px;
-      background-color: hsl(0, 0%, 20%);
-      color: hsl(0, 0%, 100%);
-      font-weight: 600;
-      padding-block: 14px;
-      border-radius: 10px;
-    }
   </style>
 </head>
 <body>
   <main>
-    <div class="card-social">
-      <div class="social-section">
-        <img class="avatar" src="assets/images/avatar-jessica.jpeg" alt="avatar-jessica">
-        <div class="info">
-          <span class="name">Jessica Randall</span>
-          <span class="address">London, United Kingdom</span>
+    <div class="card-recipe">
+      <img src="assets/images/image-omelette.jpeg" alt="image-omelette">
+      <div>
+        <h1>Simple Omelette Recipe</h1>
+        <p class="basic-paragraph">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked  to perfection, optionally filled with your choice of cheese, vegetables, or meats.</span>
+      </div>
+
+      <div class="card-prepare">
+        <p>Preparation time</p>
+        <ul class="preparetime-list">
+          <li><b>Total:</b> Approximately 10 minutes</li>
+          <li><b>Preparation:</b> 5 minutes</li>
+          <li><b>Cooking:</b> 5 minutes</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Ingredients</h2>
+        <ul>
+          <li>2-3 large eggs</li>
+          <li>Salt, to taste</li>
+          <li>Pepper, to taste</li>
+          <li>1 tablespoon of butter or oil</li>
+          <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+        </ul>
+      </div>
+      <div class="divider"></div>
+      <div>
+        <h2>Instructions</h2>
+        <ol>
+          <li>
+            <b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+            You can add a tablespoon of water or milk for a fluffier texture.</li>
+          <li><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+          <li><b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+            the eggs evenly coat the surface.</li>
+          <li><b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the 
+            middle, sprinkle your chosen fillings over one half of the omelette.</li>
+          <li><b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the 
+            fillings. Let it cook for another minute, then slide it onto a plate.</li>
+          <li><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
+        </ul>
+      </div>
+      <div class="divider"></div>
+      <div>
+        <h2>Nutrition</h2>
+        <p class="basic-paragraph">The table below shows nutritional values per serving without the additional fillings.</p>
+        <div class="flex-table">
+            <div class="table-row">
+              <span class="basic-paragraph">Calories</span>
+              <b class="orange-paragraph">277kcal</b>
+            </div>
+            <div class="divider"></div>
+            <div class="table-row">
+              <span class="basic-paragraph">Carbs</span>
+              <b class="orange-paragraph">0g</b>
+            </div>
+            <div class="divider"></div>
+            <div class="table-row">
+              <span class="basic-paragraph">Protein</span>
+              <b class="orange-paragraph">20g</b>
+            </div>
+            <div class="divider"></div>
+            <div class="table-row">
+              <span class="basic-paragraph">Fat</span>
+              <b class="orange-paragraph">22g</b>
+            </div>
+            
         </div>
-        <p>"Front-end developer and avid reader."</p>
+        
       </div>
-      <div class="btn-section">
-        <span>GitHub</span>
-        <span>Frontend Mentor</span>
-        <span>LinkedIn</span>
-        <span>Twitter</span>
-        <span>Instagram</span>
-
-      </div>
-
     </div>
 
   </main>
+
+
+
+
+ 
+
+
+
+
+
+  
+
+ 
+ 
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  Calories
+  277kcal
+
+  Carbs
+  0g
+
+  Protein
+  20g
+
+  Fat
+  22g
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
 </body>
 </html>
